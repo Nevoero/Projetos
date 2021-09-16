@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1:nth-child(1) {
+    text-align: center;
+    color: #000;
+}
+
+ins:nth-child(1) {
+    color: #000;
+}
+
+.fundo{
+    /*background: radial-gradient(circle, blue 270px, #575656, #333 290px);*/
+    background:  linear-gradient(-90deg,#ff3030 50%, #1E90FF 50%);
+    filter: brightness(0.5) contrast(3);
+    height: 100vh;
+    color: #FFF;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: change 5s linear infinite;/*relação desativada*/
+}
+
+.fundo:hover {
+    animation: mudar 0.25s linear 1;
+    background-image:  linear-gradient(180deg, #1E90FF 50%,#ff3030 50%);
+    filter: brightness(1) contrast(2) sepia(0.4);
+}
+
+@keyframes mudar {
+   0%{
+    background:  linear-gradient(-90deg,#ff3030 50%, #1E90FF 50%);
+   }
+   20%{
+    background:  linear-gradient(-72deg,#ff3030 50%, #1E90FF 50%);
+   }
+   40%{
+    background:  linear-gradient(-54deg,#ff3030 50%, #1E90FF 50%);
+   }
+   60%{
+    background:  linear-gradient(-36deg,#ff3030 50%, #1E90FF 50%);
+   }
+   80%{
+    background:  linear-gradient(-18deg,#ff3030 50%, #1E90FF 50%);
+   }
+   100%{
+    background:  linear-gradient(0deg,#ff3030 50%, #1E90FF 50%);
+   }
+}
+
+@keyframes chane {/*desativei*/
+    0% {
+        background: radial-gradient(circle, blue 270px, #575656, #333 290px);
+    }
+
+    25%{
+        background: radial-gradient(circle, blue 220px, #333, #333 290px);
+    }
+
+    50%{
+        background: radial-gradient(circle, blue 170px, #333, #333 290px);
+    }
+
+    75%{
+        background: radial-gradient(circle, blue 120px, #333, #333 290px);
+    }
+
+    100% {
+        background: radial-gradient(circle, blue 70px, #333, #333 290px);
+    }
+}
+
+.Calculadora {
+    position: absolute;
+    background: linear-gradient(45deg,green 40%,yellow 50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+/*.Calculadora:hover {
+    animation: changecolor 3s linear infinite;
+}
+
+@keyframes changecolor {
+    0%{
+        background: linear-gradient(45deg,green 40%,yellow 50%);
+    }
+    100%{
+        background: linear-gradient(45deg,yellow 40%,green 50%);
+    }
+}*/
+
+.botao {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: #2f4f4f;
+    border-top: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+    color: #FFF;
+}
+
+.botao:hover {
+    background-color: black;
+}
+
+#Resultado {
+    width: 215px;
+    background-color: #FFF;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
+
+#animarp {
+    margin-left: 20px;
+    transform: translateY(20px) scale(4);
+    animation: descerp 3s linear infinite;
+}
+
+#divertidop {
+    margin-left: 130px;
+    transform: translateY(20px) scale(4);
+    animation: subirp 1s linear infinite;
+}
+
+@keyframes descerp {
+    0%{ transform: translateY(250px) scale(4);}
+    50%{ transform: translateY(10px) scale(4);}
+    100%{ transform: translateY(250px) scale(4);}
+}
+
+@keyframes subirp {
+    0%{ transform: translateY(10px) scale(4);}
+    50%{ transform: translateY(250px) scale(4);}
+    100%{ transform: translateY(10px) scale(4);}
+}
+
+
+#animar {
+    margin-left: 600px;
+    transform: translateY(20px) scale(4);
+    animation: descer 0.5s linear infinite;
+}
+
+#divertido {
+    margin-left: 130px;
+    transform: translateY(20px) scale(4);
+    animation: subir 0.4s linear infinite;/*0.00001*/
+}
+
+@keyframes descer {
+    0%{ transform: translateY(250px) scale(4);}
+    50%{ transform: translateY(10px) scale(4);}
+    100%{ transform: translateY(250px) scale(4);}
+}
+
+@keyframes subir {
+    0%{ transform: translateY(10px) scale(4);}
+    50%{ transform: translateY(250px) scale(4);}
+    100%{ transform: translateY(10px) scale(4);}
+}
