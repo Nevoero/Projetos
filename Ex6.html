@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="Ex6.css">
+    <link rel="stylesheet" type="text/css" href="calculadora_css.css">
 </head>
-<body onload="merito()">
+<body>
     <div class="fundo">
         <ins style="color: #FFF;"><h1 style="color: #FFF;">Pedro Bicalho</h1></ins>
-
-        <input id="animarp" type="checkbox"><input id="divertidop" type="checkbox">
-
+        
         <div class="Calculadora">
+            <button class="ini"></button>
             <ins><h1>Calculadora</h1></ins>
             <h3 id="Resultado"></h3>
             <table>
@@ -42,14 +41,12 @@
                 </tr>    
                 <tr>
                     <td colspan="2"><button class="botao" onclick="insert('0')" style="width: 106px;">0</button></td>
-                    <td><button class="botao" onclick="insert('.')">,</button></td>
+                    <td><button class="botao" onclick="insert('.')">.</button></td>
                 </tr>    
             </table>
+            <button class="fim"></button>
         </div>
-    
-
-    <input id="animar" type="checkbox"><input id="divertido" type="checkbox">
 </div>
-    <script src="Ex6.js"></script>
+    <script src="calculadora_js.js"></script>
 </body>
 </html>
